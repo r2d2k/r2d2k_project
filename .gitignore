@@ -9,3 +9,7 @@
 *.tfbackend
 .terraform/
 terraform-key.json
+
+# Packer
+*.pkrvars
+packer-key.json
