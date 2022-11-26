@@ -11,5 +11,5 @@
 terraform-key.json
 
 # Packer
-*.pkrvars
+*.pkrvars.hcl
 packer-key.json
