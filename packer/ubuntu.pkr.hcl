@@ -48,7 +48,7 @@ build {
         "echo debconf debconf/frontend select Noninteractive | sudo debconf-set-selections",
         "sudo apt-get -y update",
         "sudo apt-get -y upgrade",
-        "sudo apt-get -y install apt-transport-https ca-certificates curl gnupg lsb-release",
+        "sudo apt-get -y install apt-transport-https ca-certificates curl gnupg lsb-release htop tmux mc",
         "sudo apt-get -y autoremove",
         "sudo apt-get -y clean"
     ]
