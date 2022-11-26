@@ -1,2 +1,11 @@
 # Open Office
 .~lock*
+
+# Terraform
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+*.tfvars
+*.tfbackend
+.terraform/
+terraform-key.json
