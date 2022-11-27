@@ -42,3 +42,29 @@ module "docker" {
   disk_image_id      = var.vm_image_id
   subnet_id          = module.subnet.vm_subnet_id
 }
+
+module "rabbit" {
+  source             = "./modules/server"
+  zone               = var.zone
+  server_name        = var.vm_rabbit_name
+  cpu_cores          = var.vm_rabbit_cpu_count
+  ram_size           = var.vm_rabbit_ram_size
+  disk_size          = var.vm_rabbit_disk_size
+  external_ip_enable = var.vm_rabbit_external_ip_enable
+  public_key_path    = var.public_key_path
+  disk_image_id      = var.vm_image_id
+  subnet_id          = module.subnet.vm_subnet_id
+}
+
+module "mongodb" {
+  source             = "./modules/server"
+  zone               = var.zone
+  server_name        = var.vm_mongodb_name
+  cpu_cores          = var.vm_mongodb_cpu_count
+  ram_size           = var.vm_mongodb_ram_size
+  disk_size          = var.vm_mongodb_disk_size
+  external_ip_enable = var.vm_mongodb_external_ip_enable
+  public_key_path    = var.public_key_path
+  disk_image_id      = var.vm_image_id
+  subnet_id          = module.subnet.vm_subnet_id
+}

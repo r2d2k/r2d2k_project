@@ -63,3 +63,27 @@ variable "vm_docker_disk_size" {
 }
 variable "vm_docker_external_ip_enable" {
 }
+
+# VM rabbit
+variable "vm_rabbit_name" {
+}
+variable "vm_rabbit_cpu_count" {
+}
+variable "vm_rabbit_ram_size" {
+}
+variable "vm_rabbit_disk_size" {
+}
+variable "vm_rabbit_external_ip_enable" {
+}
+
+# VM mongodb
+variable "vm_mongodb_name" {
+}
+variable "vm_mongodb_cpu_count" {
+}
+variable "vm_mongodb_ram_size" {
+}
+variable "vm_mongodb_disk_size" {
+}
+variable "vm_mongodb_external_ip_enable" {
+}
