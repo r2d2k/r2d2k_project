@@ -1,0 +1,14 @@
+---
+
+# Role: timezone
+timezone_name: Europe/Moscow
+
+# Role: ntp_server
+ntp_clients_network: 10.0.0.0/24
+
+# Role: ntp_client
+timesyncd_ntp_hosts:
+  - gate
+
+# Role: mongodb
+mongodb_bind_ip: 0.0.0.0

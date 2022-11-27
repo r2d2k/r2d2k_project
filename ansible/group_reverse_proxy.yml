@@ -1,0 +1,4 @@
+---
+- hosts: reverse_proxy
+  roles:
+    - {role: caddy, become: true}

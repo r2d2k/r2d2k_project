@@ -1,0 +1,21 @@
+# {{ ansible_managed }}
+
+https://devops2022.cf {
+  respond "Welcome to devops2022.cf"
+  log {
+    output file /var/log/caddy/devops2022.cf-access.log {
+      roll_size 10M
+      roll_keep 7
+    }
+  }
+}
+
+https://gitlab.devops2022.cf {
+  reverse_proxy http://gitlab
+  log {
+    output file /var/log/caddy/gitlab.devops2022.cf-access.log {
+      roll_size 10M
+      roll_keep 7
+    }
+  }
+}
