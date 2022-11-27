@@ -1,0 +1,8 @@
+---
+- hosts: ntp_servers
+  roles:
+    - {role: ntp_server, become: true}
+
+- hosts: common:!ntp_servers
+  roles:
+    - {role: ntp_client, become: true}

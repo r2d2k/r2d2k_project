@@ -1,0 +1,6 @@
+---
+timesyncd_ntp_hosts:
+  - pool.ntp.org
+
+timesyncd_fallback_ntp_hosts:
+  - ntp.ubuntu.com
