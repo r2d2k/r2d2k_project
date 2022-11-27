@@ -13,3 +13,11 @@ output "vm_gitlab_external_ip_address" {
 output "vm_gitlab_internal_ip_address" {
   value = module.gitlab.internal_ip_address
 }
+
+output "vm_docker_external_ip_address" {
+  value = module.docker.external_ip_address
+}
+
+output "vm_docker_internal_ip_address" {
+  value = module.docker.internal_ip_address
+}

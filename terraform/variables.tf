@@ -51,3 +51,15 @@ variable "vm_gitlab_disk_size" {
 }
 variable "vm_gitlab_external_ip_enable" {
 }
+
+# VM docker
+variable "vm_docker_name" {
+}
+variable "vm_docker_cpu_count" {
+}
+variable "vm_docker_ram_size" {
+}
+variable "vm_docker_disk_size" {
+}
+variable "vm_docker_external_ip_enable" {
+}
