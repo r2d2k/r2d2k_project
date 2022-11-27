@@ -39,3 +39,15 @@ variable "vm_gate_disk_size" {
 }
 variable "vm_gate_external_ip_enable" {
 }
+
+# VM gitlab
+variable "vm_gitlab_name" {
+}
+variable "vm_gitlab_cpu_count" {
+}
+variable "vm_gitlab_ram_size" {
+}
+variable "vm_gitlab_disk_size" {
+}
+variable "vm_gitlab_external_ip_enable" {
+}
