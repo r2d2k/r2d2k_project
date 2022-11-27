@@ -1,3 +1,5 @@
 ---
 - import_playbook: group_common.yml
 - import_playbook: group_ntp_servers.yml
+- import_playbook: group_reverse_proxy.yml
+- import_playbook: group_mongodb_servers.yml

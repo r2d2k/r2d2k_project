@@ -1,0 +1,4 @@
+---
+- hosts: mongodb_servers
+  roles:
+    - {role: mongodb, become: true}

@@ -1,0 +1,21 @@
+---
+- name: Install mongodb
+  apt:
+    name: mongodb
+    state: present
+
+- name: Setup config
+  template:
+    src: mongodb.conf.j2
+    dest: /etc/mongodb.conf
+    mode: 0644
+    owner: root
+    group: root
+  notify:
+    - restart mongodb
+
+- name: Enable and run mongodb
+  service:
+    name: mongodb
+    state: started
+    enabled: true
