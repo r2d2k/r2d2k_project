@@ -1,10 +1,13 @@
-[cloud]
-gate		ansible_host=158.160.33.132
+[common]
+gate		ansible_host=51.250.88.90
 #gate		ansible_host=10.0.0.37
 docker		ansible_host=10.0.0.4
 gitlab		ansible_host=10.0.0.34
 mongodb		ansible_host=10.0.0.6
 rabbitmq	ansible_host=10.0.0.36
+
+[ntp_servers]
+gate
 
 
 [all:vars]

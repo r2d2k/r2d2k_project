@@ -1,2 +1,3 @@
 ---
 - import_playbook: group_common.yml
+- import_playbook: group_ntp_servers.yml

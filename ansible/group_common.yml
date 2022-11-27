@@ -1,4 +1,4 @@
 ---
-- hosts: cloud
+- hosts: common
   roles:
-    - { role: timezone, become: yes }
+    - {role: timezone, become: true}
