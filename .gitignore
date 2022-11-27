@@ -13,3 +13,6 @@ terraform-key.json
 # Packer
 *.pkrvars.hcl
 packer-key.json
+
+# Ansible
+facts_cache/
