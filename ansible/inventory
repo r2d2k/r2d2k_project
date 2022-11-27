@@ -9,6 +9,9 @@ rabbitmq	ansible_host=10.0.0.36
 [ntp_servers]
 gate
 
+[reverse_proxy]
+gate
+
 
 [all:vars]
 ansible_ssh_private_key_file = ~/.ssh/ubuntu
