@@ -12,3 +12,6 @@ timesyncd_ntp_hosts:
 
 # Role: mongodb
 mongodb_bind_ip: 0.0.0.0
+
+# Role: rabbitmq
+rabbitmq_node_ip: 0.0.0.0

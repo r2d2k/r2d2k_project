@@ -3,3 +3,4 @@
 - import_playbook: group_ntp_servers.yml
 - import_playbook: group_reverse_proxy.yml
 - import_playbook: group_mongodb_servers.yml
+- import_playbook: group_rabbitmq_servers.yml
