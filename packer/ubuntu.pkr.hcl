@@ -27,7 +27,7 @@ variable "username" {
 # Define functions
 locals { timestamp = regex_replace(timestamp(), "[- TZ:]", "") }
 
-
+# Define template
 source "yandex" "image" {
   folder_id                = "${var.folder_id}"
   image_family             = "${var.image_family}"
