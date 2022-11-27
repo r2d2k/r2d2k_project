@@ -10,8 +10,10 @@ resource "yandex_compute_instance" "server" {
   hostname = var.server_name
   description = "Created by Terraform"
 
+  allow_stopping_for_update = true
   resources {
     cores  = var.cpu_cores
+    core_fraction = var.core_fraction
     memory = var.ram_size
   }
 

@@ -17,6 +17,11 @@ variable "cpu_cores" {
   default     = 2
 }
 
+variable "core_fraction" {
+  description = "VM vCPU baseline perfomance"
+  default     = 5
+}
+
 variable "ram_size" {
   description = "VM RAM size in GB"
   default     = 4

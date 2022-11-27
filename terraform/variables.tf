@@ -29,6 +29,8 @@ variable "vm_gate_name" {
 }
 variable "vm_gate_cpu_count" {
 }
+variable "vm_gate_cpu_core_fraction" {
+}
 variable "vm_gate_ram_size" {
 }
 variable "vm_gate_disk_size" {
@@ -42,6 +44,8 @@ variable "vm_gate_external_ip_enable" {
 variable "vm_gitlab_name" {
 }
 variable "vm_gitlab_cpu_count" {
+}
+variable "vm_gitlab_cpu_core_fraction" {
 }
 variable "vm_gitlab_ram_size" {
 }
@@ -57,6 +61,8 @@ variable "vm_docker_name" {
 }
 variable "vm_docker_cpu_count" {
 }
+variable "vm_docker_cpu_core_fraction" {
+}
 variable "vm_docker_ram_size" {
 }
 variable "vm_docker_disk_size" {
@@ -71,6 +77,8 @@ variable "vm_rabbitmq_name" {
 }
 variable "vm_rabbitmq_cpu_count" {
 }
+variable "vm_rabbitmq_cpu_core_fraction" {
+}
 variable "vm_rabbitmq_ram_size" {
 }
 variable "vm_rabbitmq_disk_size" {
@@ -84,6 +92,8 @@ variable "vm_rabbitmq_external_ip_enable" {
 variable "vm_mongodb_name" {
 }
 variable "vm_mongodb_cpu_count" {
+}
+variable "vm_mongodb_cpu_core_fraction" {
 }
 variable "vm_mongodb_ram_size" {
 }
