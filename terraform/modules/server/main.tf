@@ -1,8 +1,14 @@
+data "yandex_compute_image" "disk_image" {
+  folder_id = var.folder_id
+  family    = var.disk_image_family
+}
+
 resource "yandex_compute_instance" "server" {
 
   zone = var.zone
   name = var.server_name
   hostname = var.server_name
+  description = "Created by Terraform"
 
   resources {
     cores  = var.cpu_cores
@@ -11,7 +17,7 @@ resource "yandex_compute_instance" "server" {
 
   boot_disk {
     initialize_params {
-      image_id = var.disk_image_id
+      image_id = data.yandex_compute_image.disk_image.id
       size     = var.disk_size
     }
   }

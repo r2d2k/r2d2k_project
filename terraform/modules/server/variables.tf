@@ -1,5 +1,10 @@
 variable "zone" {
   description = "Zone for VM creation"
+  default     = "ru-central1-a"
+}
+
+variable "folder_id" {
+  description = "Folder ID for disk image search"
 }
 
 variable "server_name" {
@@ -17,8 +22,8 @@ variable "ram_size" {
   default     = 4
 }
 
-variable "disk_image_id" {
-  description = "VM disk image id"
+variable "disk_image_family" {
+  description = "VM disk image family"
 }
 
 variable "disk_size" {

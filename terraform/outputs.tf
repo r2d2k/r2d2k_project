@@ -22,12 +22,12 @@ output "internal_ip_address_vm_docker" {
   value = module.docker.internal_ip_address
 }
 
-output "external_ip_address_vm_rabbit" {
-  value = module.rabbit.external_ip_address
+output "external_ip_address_vm_rabbitmq" {
+  value = module.rabbitmq.external_ip_address
 }
 
-output "internal_ip_address_vm_rabbit" {
-  value = module.rabbit.internal_ip_address
+output "internal_ip_address_vm_rabbitmq" {
+  value = module.rabbitmq.internal_ip_address
 }
 
 output "external_ip_address_vm_mongodb" {
